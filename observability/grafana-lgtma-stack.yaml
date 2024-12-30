@@ -23,7 +23,7 @@ metadata:
   name: grafana-lgtma-stack
   namespace: argocd
 spec:
-  project: default
+  project: observability
   source:
     chart: lgtm-distributed
     repoURL: https://grafana.github.io/helm-charts
