@@ -16,6 +16,12 @@ spec:
   destinations:
     - namespace: '*'
       server: '*'
+  clusterResourceWhitelist:
+    - group: rbac.authorization.k8s.io
+      kind: ClusterRole
+    - group: rbac.authorization.k8s.io
+      kind: ClusterRoleBinding
+
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
